@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills - Keerthika</title>
+  <link rel="icon" type="image/x-icon" href="favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo"><span>Keerthika</span></div>
+      <div class="links">
+        <div><a href="index.html">Home</a></div>
+        <div><a href="about.html">About</a></div>
+        <div><a href="skills.html">Skills</a></div>
+        <div><a href="projects.html">Projects</a></div>
+        <div class="contact-btn"><a href="#">Contact Me</a></div>
+      </div>
+      <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+
+    <div class="dropdown-links">
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="#">Contact Me</a>
+        <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+      </div>
+    </div>
+  </nav>
+  <section>
+    <div class="main-container skills-page">
+      <div class="content">
+        <h1>My <span>Skills</span></h1>
+        <div class="skills-grid">
+
+      <div class="skills-group">
+        <h2>Technical Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Basic JavaScript</li>
+          <li>Responsive Web Design</li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <h2>UI/UX & Design</h2>
+        <ul>
+          <li>Figma (UI design & wireframing)</li>
+          <li>Wireframing & basic prototyping</li>
+          <li>Layout design & color selection</li>
+          <li>User-friendly design principles</li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <h2>Tools</h2>
+        <ul>
+          <li>Figma</li>
+          <li>VS Code</li>
+          <li>GitHub</li>
+        </ul>
+      </div>
+
+      <div class="skills-group">
+        <h2>Soft Skills</h2>
+        <ul>
+          <li>Quick learner</li>
+          <li>Attention to detail</li>
+          <li>Team collaboration</li>
+          <li>Willingness to learn</li>
+        </ul>
+      </div>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/keerthi0201" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/keerthika0201" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+      </div>
+      <div class="image">
+        <img src="profile_photo.png">
+      </div>
+    </div>
+  </section>
+  <script>
+    function hamburg(){
+      const navbar = document.querySelector('.dropdown-links');
+      navbar.style.transform = 'translateY(0px)';
+      document.querySelector('.hamburg').style.display = 'none';
+      document.querySelector('.cancel').style.display = 'block';
+    }
+
+    function cancel(){
+      const navbar = document.querySelector('.dropdown-links');
+      navbar.style.transform = 'translateY(-500px)';
+      document.querySelector('.hamburg').style.display = 'block';
+      document.querySelector('.cancel').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
