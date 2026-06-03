@@ -57,13 +57,7 @@ portfolio-website/
 
 ## Live Website
 
-After enabling GitHub Pages, your website will be available at:
-
-```
 https://your-username.github.io/portfolio-website
-```
-
-Replace `your-username` with your GitHub username.
 
 ---
 
